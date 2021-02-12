@@ -7,7 +7,7 @@ hashList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 
 i = 0
 hashChoice = str()
-while i < 6:
+while i < 10:
   hashChoice += random.choice(hashList)
   i += 1
 hashInterim = hashChoice.encode('utf-8')
