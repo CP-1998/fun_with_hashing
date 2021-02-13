@@ -4,7 +4,8 @@ import hashlib
 
 def hashFunction():
   hashList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-            'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+            'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
+            'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
             
   i = 0
   hashChoice = str()
@@ -15,6 +16,9 @@ def hashFunction():
   hashFunc = hashlib.sha256()
   hashFunc.update(hashInterim)
   hashFinal = hashFunc.hexdigest()
-  print(hashFinal)
+  return(hashFinal)
+  
 
-hashFunction()
+test = hashFunction()
+
+print(test)
