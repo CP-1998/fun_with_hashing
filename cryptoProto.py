@@ -24,7 +24,6 @@ class SourceBloc:
     while i < 256:
       hashChoice += secrets.choice(hashList)
       i += 1
-    print(hashChoice)
     hashInterim = hashChoice.encode('utf-8')
     hashFunc = hashlib.sha256()
     hashFunc.update(hashInterim)
